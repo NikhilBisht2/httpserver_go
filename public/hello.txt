@@ -1,0 +1,3 @@
+Hello from the static file handler!
+If you can read this, your server found the file, read it,
+and sent it back with Content-Type: text/plain.

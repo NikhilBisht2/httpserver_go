@@ -1,0 +1,5 @@
+# Build output
+httpserver
+httpserver.exe
+*.test
+*.out
