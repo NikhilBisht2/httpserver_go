@@ -4,17 +4,6 @@
 //
 //	Accept loop -> goroutine per connection -> parseRequest -> middleware chain
 //	-> router -> handler -> Write -> (keep-alive loop or close)
-//
-// Files:
-//
-//	main.go        wiring: flags, routes, graceful shutdown
-//	server.go      listener, accept loop, connection lifecycle, timeouts
-//	request.go     HTTP request parsing (with limits)
-//	response.go    HTTP response building and writing
-//	router.go      exact + prefix routing, 404/405, middleware chain
-//	middleware.go  logging, panic recovery, request counting
-//	static.go      static files with path-traversal protection
-//	handlers.go    the application endpoints
 package main
 
 import (
